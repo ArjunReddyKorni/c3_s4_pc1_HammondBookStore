@@ -1,11 +1,12 @@
 package base;
 
-public class Book extends Author{
+public class Book {
 
     private long ISBN;
     private String title;
     private String description;
     private int price;
+    private Author author;
 
     public long getISBN() {
         return ISBN;
@@ -39,12 +40,21 @@ public class Book extends Author{
         this.price = price;
     }
 
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+
     public void display(){
         System.out.println("ISBN = " + ISBN);
         System.out.println("title = " + title);
         System.out.println("description = " + description);
         System.out.println("price = " + price);
-        System.out.println(getAuthorName());
-        System.out.println(getPenName());
+        System.out.println(author.getAuthorName());
+        System.out.println(author.getPenName());
+
     }
 }
