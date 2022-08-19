@@ -48,6 +48,18 @@ public class Book {
         this.author = author;
     }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "ISBN=" + ISBN +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", author=" + author +
+
+                '}';
+    }
+
     public void display(){
         System.out.println("ISBN = " + ISBN);
         System.out.println("title = " + title);
@@ -55,6 +67,8 @@ public class Book {
         System.out.println("price = " + price);
         System.out.println(author.getAuthorName());
         System.out.println(author.getPenName());
+
+
 
     }
 }

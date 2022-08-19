@@ -5,10 +5,7 @@ public class Author  {
     private String authorName;
     private String penName;
 
-    @Override
-    public String toString(){
-       return "authorName" + authorName + "penName" + penName;
-    }
+
 
     public String getAuthorName() {
         return authorName;
@@ -26,7 +23,10 @@ public class Author  {
         this.penName = penName;
     }
 
-
+    @Override
+    public String toString(){
+        return "authorName" + authorName + "penName" + penName;
+    }
 
 
 }
